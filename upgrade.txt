@@ -1,0 +1,50 @@
+/////////////////////////////////
+///       OpenCart V1.5.x     ///
+///    Upgrade Instructions   ///
+///  http://www.opencart.com  ///
+/////////////////////////////////
+
+
+NOTE: THIS IS FOR UPGRADING existing 1.5.x to new 1.5.x versions
+If you have 1.4.x, You need to use the script here:
+http://forum.opencart.com/viewtopic.php?f=2&t=36519
+
+
+-------
+UPGRADE FOR 1.5.x to 1.5.x
+-------
+
+STEP 1. BACKUP YOUR EXISTING STORE FILES AND DATABASE!!!
+
+STEP 2. Upload ALL new files on top of your current install EXCEPT config.php and admin/config.php
+
+STEP 3. Browse to http://www.yourstore.com/shop/install
+
+STEP 4. The installer should direct you to the upgrade process. If you see the install steps, then you overwrote your config files. Restore them as the upgrade needs the existing config.php and admin/config.php files.
+
+STEP 5. Click "Upgrade". After a few seconds you should see the upgrade success page. Follow the steps.
+
+STEP 6. Post any upgrade script errors problems in the forums
+
+STEP 7. Clear any cookies in your browser to avoid getting token errors.
+
+STEP 8. Load the admin page & press Ctrl+F5 twice to force the browser to update the css changes.
+
+STEP 9. Goto Admin->Users->User Groups and Edit the Top Adminstrator group. Check All boxes.
+
+STEP 10. Goto Admin and Edit the main System Settings. Update all fields and click save, even if nothing changed.
+
+STEP 11. Load the store front & press Ctrl+F5 twice to force the browser to update the css changes.
+
+
+
+Possible Errors and Solutions:
+------------------------------
+Nothing to specify at this time
+
+
+Please post any other errors in the forum thread specific to your version of OpenCart.
+
+
+That's It!
+OpenCart Dev Team

@@ -1,0 +1,17 @@
+# sys created files
+*~
+*.swp
+Thumbs.db
+\#*#
+.#*
+
+# eclipse files
+.buildpath
+.project
+.settings/
+
+# opencart files
+config.php
+admin/config.php
+install/
+
