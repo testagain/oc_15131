@@ -14,4 +14,6 @@ Thumbs.db
 config.php
 admin/config.php
 install/
+system/cache/
+system/logs/
 

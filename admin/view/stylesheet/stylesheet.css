@@ -39,10 +39,11 @@ label {
 	cursor: pointer;
 }
 #header .div1 {
-	height: 56px;
-	padding: 0px 30px;
-	background: url('../image/header.png') repeat-x;
-	min-width: 900px;
+	background: url("../image/admin_header.png") repeat-x scroll left bottom transparent;
+    color: #333333;
+    height: 56px;
+    min-width: 900px;
+    padding: 0 30px;
 }
 #header .div2 {
 	color: #FFFFFF;
@@ -52,7 +53,7 @@ label {
 #header .div3 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	color: #FFF;
+	color: #000;
 	text-align: right;
 	padding: 15px 0px 0px 0px;
 	float: right;
@@ -267,7 +268,7 @@ a.button, .list a.button {
 	color: #FFF;
 	display: inline-block;
 	padding: 5px 15px 5px 15px;
-	background: #003A88;
+	background: #018EEA;
 	-webkit-border-radius: 10px 10px 10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px;
 	-khtml-border-radius: 10px 10px 10px 10px;
@@ -497,7 +498,7 @@ table.form > tbody > tr > td {
 	background: #FFF;
 }
 .dashboard-heading {
-	background: #547C96; 
+	background: #018EEA; 
 	color: #FFF; 
 	border-bottom: 1px solid #8EAEC3; 
 	padding: 5px; 
