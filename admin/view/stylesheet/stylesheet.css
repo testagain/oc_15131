@@ -511,3 +511,7 @@ table.form > tbody > tr > td {
 	padding: 10px; 
 	min-height: 180px;	
 }
+
+.hidden{
+	display:none;
+}

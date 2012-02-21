@@ -59,13 +59,24 @@ class ControllerExtensionModule extends Controller {
 						
 		$files = glob(DIR_APPLICATION . 'controller/module/*.php');
 		
+		$ignor = array();
+		$ignor = array('affiliate','special','store');
+		
 		if ($files) {
 			foreach ($files as $file) {
+				
+				
 				$extension = basename($file, '.php');
 				
 				$this->load->language('module/' . $extension);
 	
 				$action = array();
+				
+				
+				if(in_array($extension,$ignor)){
+					continue;
+				}
+				
 				
 				if (!in_array($extension, $extensions)) {
 					$action[] = array(
