@@ -57,6 +57,8 @@ class ControllerExtensionPayment extends Controller {
 			}
 		}
 		
+		$allowed_methods = array();
+		
 		$this->data['extensions'] = array();
 						
 		$files = glob(DIR_APPLICATION . 'controller/payment/*.php');
