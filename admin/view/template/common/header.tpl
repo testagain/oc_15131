@@ -100,7 +100,7 @@ $(document).ready(function(){
               <li><a href="<?php echo $customer_group; ?>"><?php echo $text_customer_group; ?></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
+          <li style="display:none;"><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
           <li><a href="<?php echo $coupon; ?>"><?php echo $text_coupon; ?></a></li>
           <li><a class="parent"><?php echo $text_voucher; ?></a>
             <ul>
