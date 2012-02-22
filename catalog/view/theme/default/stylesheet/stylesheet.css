@@ -1555,8 +1555,9 @@ a.button:hover span {
 }
 #footer .column {
 	float: left;
-	width: 25%;
+	width: 19%;
 	min-height: 100px;
+	list-style-image: url("../image/list.gif");
 }
 #footer .column ul {
 	margin-top: 0px;
@@ -1585,4 +1586,36 @@ a.button:hover span {
 }
 .banner div img {
 	margin-bottom: 20px;
+}
+
+
+#iconpad1{
+	background:url(../image/fb.gif) no-repeat;
+	height:30px;
+	width:150px;
+	float:left;
+	padding-left:40px;
+	padding-top:8px;
+	list-style:none;
+	margin-top:10px;
+}
+
+#iconpad2{
+	background:url(../image/twt.gif) no-repeat;
+	height:30px;
+	width:150px;
+	float:left;
+	padding-left:40px;
+	padding-top:8px;
+	list-style:none;
+}
+
+#iconpad3{
+	background:url(../image/youtube.gif) no-repeat;
+	height:30px;
+	width:150px;
+	float:left;
+	padding-left:40px;
+	padding-top:8px;
+	list-style:none;
 }

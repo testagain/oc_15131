@@ -33,6 +33,13 @@
       <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
     </ul>
   </div>
+  <div class="column">
+      <ul>
+			<li id="iconpad1"><a href="#"><strong><?php echo $text_add_facebook;?></strong></a></li>
+			<li id="iconpad2"><a href="#"><strong><?php echo $text_follow_twitter;?></strong></a></li>
+			<li id="iconpad3"><a href="#"><strong><?php echo $text_watch_youtube;?></strong></a></li>
+		</ul>
+  </div>  
 </div>
 <!-- 
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
