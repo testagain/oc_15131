@@ -67,6 +67,9 @@ class ControllerCommonHeader extends Controller {
 			}
 		}
 		
+		$this->data['sign_in'] = $this->url->link('account/login', '', 'SSL');
+		$this->data['register'] = $this->url->link('account/register', '', 'SSL');
+		
 		$this->data['text_home'] = $this->language->get('text_home');
 		$this->data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), (isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0));
 		$this->data['text_cart'] = $this->language->get('text_cart');
@@ -78,7 +81,9 @@ class ControllerCommonHeader extends Controller {
     	$this->data['text_checkout'] = $this->language->get('text_checkout');
 		$this->data['text_language'] = $this->language->get('text_language');
     	$this->data['text_currency'] = $this->language->get('text_currency');
-				
+		$this->data['text_signin'] = $this->language->get('text_signin');
+		$this->data['text_register'] = $this->language->get('text_register');				
+    	
 		$this->data['home'] = $this->url->link('common/home');
 		$this->data['wishlist'] = $this->url->link('account/wishlist');
 		$this->data['logged'] = $this->customer->isLogged();
