@@ -14,7 +14,18 @@
       <div class="buttons"><a onclick="$('#form').submit();" class="button"><?php echo $button_save; ?></a><a onclick="location = '<?php echo $cancel; ?>';" class="button"><?php echo $button_cancel; ?></a></div>
     </div>
     <div class="content">
-      <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><a href="#tab-attribute"><?php echo $tab_attribute; ?></a><a href="#tab-option"><?php echo $tab_option; ?></a><a href="#tab-discount"><?php echo $tab_discount; ?></a><a href="#tab-special"><?php echo $tab_special; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><a href="#tab-reward"><?php echo $tab_reward; ?></a><a href="#tab-design"><?php echo $tab_design; ?></a></div>
+      <div id="tabs" class="htabs">
+      <a href="#tab-general"><?php echo $tab_general; ?></a>
+      <a href="#tab-data"><?php echo $tab_data; ?></a>
+      <a href="#tab-links"><?php echo $tab_links; ?></a>
+<!--      <a href="#tab-attribute"><?php //echo $tab_attribute; ?></a> -->
+      <a href="#tab-option"><?php echo $tab_option; ?></a>
+      <a href="#tab-discount"><?php echo $tab_discount; ?></a>
+      <a href="#tab-special"><?php echo $tab_special; ?></a>
+      <a href="#tab-image"><?php echo $tab_image; ?></a>
+<!--      <a href="#tab-reward"><?php echo $tab_reward; ?></a> -->
+<!--      <a href="#tab-design"><?php echo $tab_design; ?></a> -->
+	</div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <div id="tab-general">
           <div id="languages" class="htabs">
@@ -136,7 +147,7 @@
                 <?php echo $text_no; ?>
                 <?php } ?></td>
             </tr>
-            <tr>
+            <tr class="hidden">
               <td><?php echo $entry_keyword; ?></td>
               <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" /></td>
             </tr>
@@ -299,8 +310,8 @@
             </tr>
           </table>
         </div>
-        <div id="tab-attribute">
-          <table id="attribute" class="list">
+        <div id="tab-attribute" class="hidden">
+          <table id="attribute" class="list hidden">
             <thead>
               <tr>
                 <td class="left"><?php echo $entry_attribute; ?></td>
@@ -614,8 +625,8 @@
             </tfoot>
           </table>
         </div>
-        <div id="tab-reward">
-          <table class="form">
+        <div id="tab-reward" class="hidden">
+          <table class="form hidden">
             <tr>
               <td><?php echo $entry_points; ?></td>
               <td><input type="text" name="points" value="<?php echo $points; ?>" /></td>
@@ -638,8 +649,8 @@
             <?php } ?>
           </table>
         </div>
-        <div id="tab-design">
-          <table class="list">
+        <div id="tab-design" class="hidden">
+          <table class="list hidden">
             <thead>
               <tr>
                 <td class="left"><?php echo $entry_store; ?></td>

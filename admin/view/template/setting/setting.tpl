@@ -691,7 +691,7 @@
                 <?php echo $text_no; ?>
                 <?php } ?></td>
             </tr>
-            <tr>
+            <tr class="hidden">
               <td><?php echo $entry_seo_url; ?></td>
               <td><?php if ($config_seo_url) { ?>
                 <input type="radio" name="config_seo_url" value="1" checked="checked" />

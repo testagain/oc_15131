@@ -72,7 +72,7 @@
                   <?php } ?>
                 </div></td>
             </tr>
-            <tr>
+            <tr class="hidden">
               <td><?php echo $entry_keyword; ?></td>
               <td><input type="text" name="keyword" value="<?php echo $keyword; ?>" /></td>
             </tr>
