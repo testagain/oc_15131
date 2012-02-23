@@ -806,6 +806,7 @@ a.button:hover span {
 	padding-top: 6px;
 	margin-bottom: 25px;
 	font-weight: bold;
+	display:none;
 }
 .product-compare a {
 	text-decoration: none;
