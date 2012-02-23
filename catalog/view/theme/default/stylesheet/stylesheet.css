@@ -1601,14 +1601,14 @@ a.button:hover span {
 #header {height:165px;}
 #header #cart {top:50px;}
 #header #search {top:70px;}
-#header .links a,#header #cart .heading h4,#header #cart .heading a {color:#115FAA;}
+#header .links a,#header #cart .heading a {color:#115FAA;}
 
 #menu {background:url(../image/menu_sl.jpg) repeat-x 0 0;}
 
 #top_slice{
 	background:url(../image/hd_slice.jpg) repeat-x;
 	width:100%;
-	height:31px;
+	height:25px;
 	float:left;
 	text-align:right;
 	color:#fff;
