@@ -11,7 +11,7 @@
     <h3><?php echo $text_service; ?></h3>
     <ul>
       <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
-      <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+      <li class="hidden"><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
       <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
     </ul>
   </div>
@@ -19,8 +19,8 @@
     <h3><?php echo $text_extra; ?></h3>
     <ul>
       <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-      <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-      <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
+      <li class="hidden"><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+      <li class="hidden"><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
       <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
     </ul>
   </div>
@@ -29,7 +29,7 @@
     <ul>
       <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
       <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-      <li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
+      <li class="hidden"><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
       <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
     </ul>
   </div>
@@ -37,7 +37,7 @@
       <ul>
 			<li id="iconpad1"><a href="#"><strong><?php echo $text_add_facebook;?></strong></a></li>
 			<li id="iconpad2"><a href="#"><strong><?php echo $text_follow_twitter;?></strong></a></li>
-			<li id="iconpad3"><a href="#"><strong><?php echo $text_watch_youtube;?></strong></a></li>
+			<li id="iconpad3" class="hidden"><a href="#"><strong><?php echo $text_watch_youtube;?></strong></a></li>
 		</ul>
   </div>  
 </div>

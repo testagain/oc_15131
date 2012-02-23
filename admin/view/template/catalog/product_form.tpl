@@ -418,7 +418,7 @@
                   <td class="right"><?php echo $entry_quantity; ?></td>
                   <td class="left"><?php echo $entry_subtract; ?></td>
                   <td class="right"><?php echo $entry_price; ?></td>
-                  <td class="right"><?php echo $entry_option_points; ?></td>
+                  <td class="right hidden"><?php //echo $entry_option_points; ?></td>
                   <td class="right"><?php echo $entry_weight; ?></td>
                   <td></td>
                 </tr>
@@ -452,7 +452,7 @@
                       <?php } ?>
                     </select>
                     <input type="text" name="product_option[<?php echo $option_row; ?>][product_option_value][<?php echo $option_value_row; ?>][price]" value="<?php echo $product_option_value['price']; ?>" size="5" /></td>
-                  <td class="right"><select name="product_option[<?php echo $option_row; ?>][product_option_value][<?php echo $option_value_row; ?>][points_prefix]">
+                  <td class="right hidden"><select name="product_option[<?php echo $option_row; ?>][product_option_value][<?php echo $option_value_row; ?>][points_prefix]">
                       <?php if ($product_option_value['points_prefix'] == '+') { ?>
                       <option value="+" selected="selected">+</option>
                       <?php } else { ?>
@@ -961,11 +961,11 @@ function addOptionValue(option_row) {
 	html += '      <option value="+">+</option>';
 	html += '      <option value="-">-</option>';
 	html += '    </select>';
-	html += '    <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][points]" value="" size="5" /></td>';	
-	html += '    <td class="right"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][weight_prefix]">';
-	html += '      <option value="+">+</option>';
-	html += '      <option value="-">-</option>';
-	html += '    </select>';
+	//html += '    <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][points]" value="" size="5" /></td>';	
+	//html += '    <td class="right"><select name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][weight_prefix]">';
+	//html += '      <option value="+">+</option>';
+	//html += '      <option value="-">-</option>';
+	//html += '    </select>';
 	html += '    <input type="text" name="product_option[' + option_row + '][product_option_value][' + option_value_row + '][weight]" value="" size="5" /></td>';
 	html += '    <td class="left"><a onclick="$(\'#option-value-row' + option_value_row + '\').remove();" class="button"><?php echo $button_remove; ?></a></td>';
 	html += '  </tr>';

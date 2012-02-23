@@ -27,7 +27,7 @@
         <span><?php echo $text_manufacturer; ?></span> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a><br />
         <?php } ?>
         <span><?php echo $text_model; ?></span> <?php echo $model; ?><br />
-        <span><?php echo $text_reward; ?></span> <?php echo $reward; ?><br />
+	<!--        <span><?php //echo $text_reward; ?></span> <?php //echo $reward; ?><br /> -->
         <span><?php echo $text_stock; ?></span> <?php echo $stock; ?></div>
       <?php if ($price) { ?>
       <div class="price"><?php echo $text_price; ?>
@@ -204,9 +204,9 @@
           <input type="text" name="quantity" size="2" value="<?php echo $minimum; ?>" />
           <input type="hidden" name="product_id" size="2" value="<?php echo $product_id; ?>" />
           &nbsp;<a id="button-cart" class="button"><span><?php echo $button_cart; ?></span></a></div>
-        <div><span>&nbsp;&nbsp;&nbsp;<?php echo $text_or; ?>&nbsp;&nbsp;&nbsp;</span></div>
-        <div><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php echo $button_wishlist; ?></a><br />
-          <a onclick="addToCompare('<?php echo $product_id; ?>');"><?php echo $button_compare; ?></a></div>
+        <div><span>&nbsp;&nbsp;&nbsp;<?php //echo $text_or; ?>&nbsp;&nbsp;&nbsp;</span></div>
+        <div class="hidden"><a onclick="addToWishList('<?php echo $product_id; ?>');"><?php //echo $button_wishlist; ?></a><br />
+          <a onclick="addToCompare('<?php echo $product_id; ?>');"><?php //echo $button_compare; ?></a></div>
         <?php if ($minimum > 1) { ?>
         <div class="minimum"><?php echo $text_minimum; ?></div>
         <?php } ?>

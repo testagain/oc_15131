@@ -94,7 +94,7 @@
         <select name="action" onchange="$('#order').submit();">
           <option value="" selected="selected"><?php echo $text_selected; ?></option>
           <option value="reorder"><?php echo $text_reorder; ?></option>
-          <option value="return"><?php echo $text_return; ?></option>
+ <!--         <option value="return"><?php //echo $text_return; ?></option> -->
         </select>
       </div>
     </div>
