@@ -17,9 +17,13 @@
     </div>
     <div class="content">
       <div id="htabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a>
-        <?php if ($customer_id) { ?>
-        <a href="#tab-transaction"><?php echo $tab_transaction; ?></a><a href="#tab-reward"><?php echo $tab_reward; ?></a>
-        <?php } ?>
+      
+      <!--
+        <?php //if ($customer_id) { ?>
+        <a href="#tab-transaction"><?php //echo $tab_transaction; ?></a><a href="#tab-reward"><?php //echo $tab_reward; ?></a>
+        <?php //} ?>
+      -->
+      
         <a href="#tab-ip"><?php echo $tab_ip; ?></a></div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
         <div id="tab-general">

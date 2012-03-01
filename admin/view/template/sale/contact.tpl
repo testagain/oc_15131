@@ -55,16 +55,21 @@
                 <?php } else { ?>
                 <option value="customer"><?php echo $text_customer; ?></option>
                 <?php } ?>
-                <?php if ($to == 'affiliate_all') { ?>
-                <option value="affiliate_all" selected="selected"><?php echo $text_affiliate_all; ?></option>
-                <?php } else { ?>
-                <option value="affiliate_all"><?php echo $text_affiliate_all; ?></option>
-                <?php } ?>
-                <?php if ($to == 'affiliate') { ?>
-                <option value="affiliate" selected="selected"><?php echo $text_affiliate; ?></option>
-                <?php } else { ?>
-                <option value="affiliate"><?php echo $text_affiliate; ?></option>
-                <?php } ?>
+                
+                
+                <!--
+                <?php //if ($to == 'affiliate_all') { ?>
+                <option value="affiliate_all" selected="selected"><?php //echo $text_affiliate_all; ?></option>
+                <?php //} else { ?>
+                <option value="affiliate_all"><?php //echo $text_affiliate_all; ?></option>
+                <?php //} ?>
+                <?php //if ($to == 'affiliate') { ?>
+                <option value="affiliate" selected="selected"><?php //echo $text_affiliate; ?></option>
+                <?php //} else { ?>
+                <option value="affiliate"><?php //echo $text_affiliate; ?></option>
+                <?php //} ?>
+                -->
+                
                 <?php if ($to == 'product') { ?>
                 <option value="product" selected="selected"><?php echo $text_product; ?></option>
                 <?php } else { ?>

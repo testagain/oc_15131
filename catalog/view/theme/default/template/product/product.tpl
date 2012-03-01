@@ -40,9 +40,11 @@
         <?php if ($tax) { ?>
         <span class="price-tax"><?php echo $text_tax; ?> <?php echo $tax; ?></span><br />
         <?php } ?>
-        <?php if ($points) { ?>
-        <span class="reward"><small><?php echo $text_points; ?> <?php echo $points; ?></small></span> <br />
-        <?php } ?>
+        <!--
+        <?php //if ($points) { ?>
+        <span class="reward"><small><?php //echo $text_points; ?> <?php //echo $points; ?></small></span> <br />
+        <?php //} ?>
+        -->
         <?php if ($discounts) { ?>
         <br />
         <div class="discount">
@@ -224,9 +226,13 @@
     </div>
   </div>
   <div id="tabs" class="htabs"><a href="#tab-description"><?php echo $tab_description; ?></a>
-    <?php if ($attribute_groups) { ?>
-    <a href="#tab-attribute"><?php echo $tab_attribute; ?></a>
-    <?php } ?>
+    
+    <!--
+    <?php //if ($attribute_groups) { ?>
+    <a href="#tab-attribute"><?php //echo $tab_attribute; ?></a>
+    <?php //} ?>
+    -->
+    
     <?php if ($review_status) { ?>
     <a href="#tab-review"><?php echo $tab_review; ?></a>
     <?php } ?>
@@ -235,7 +241,8 @@
     <?php } ?>
   </div>
   <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
-  <?php if ($attribute_groups) { ?>
+  <!--
+  <?php //if ($attribute_groups) { ?>
   <div id="tab-attribute" class="tab-content">
     <table class="attribute">
       <?php foreach ($attribute_groups as $attribute_group) { ?>
@@ -255,7 +262,8 @@
       <?php } ?>
     </table>
   </div>
-  <?php } ?>
+  <?php //} ?>
+  -->
   <?php if ($review_status) { ?>
   <div id="tab-review" class="tab-content">
     <div id="review"></div>

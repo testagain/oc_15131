@@ -86,6 +86,8 @@ label {
 #content {
 	min-height: 400px;
 	margin-bottom: 25px;
+	padding-right:10px;
+	padding-left:10px;
 }
 #column-left + #column-right + #content, #column-left + #content {
 	margin-left: 195px;
