@@ -1,26 +1,25 @@
-<?php
-class ControllerModuleFeatured extends Controller {
-	protected function index($setting) {
-		$this->language->load('module/featured'); 
+<?php 
 
+class ControllerFbFeatured extends Controller {
+
+    public function index() {
+        $this->language->load('module/featured');
       	$this->data['heading_title'] = $this->language->get('heading_title');
-		
-		$this->data['button_cart'] = $this->language->get('button_cart');
-		
-		$this->load->model('catalog/product'); 
+        $this->load->model('catalog/product');
+        $this->data['button_add_to_cart'] = $this->language->get('button_add_to_cart');
+        $this->data['products'] = array();
+        $this->load->model('catalog/product'); 
 		
 		$this->load->model('tool/image');
-
-		$this->data['products'] = array();
-
-		$products = explode(',', $this->config->get('featured_product'));		
+        
+    	$products = explode(',', $this->config->get('featured_product'));		
 
 		foreach ($products as $product_id) {
 			$product_info = $this->model_catalog_product->getProduct($product_id);
 			
 			if ($product_info) {
 				if ($product_info['image']) {
-					$image = $this->model_tool_image->resize($product_info['image'], $setting['image_width'], $setting['image_height']);
+					$image = $this->model_tool_image->resize($product_info['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
 				} else {
 					$image = false;
 				}
@@ -55,32 +54,18 @@ class ControllerModuleFeatured extends Controller {
 				);
 			}
 		}
+        
+        if (!$this->config->get('config_customer_price')) {
+            $this->data['display_price'] = TRUE;
+        } elseif ($this->customer->isLogged()) {
+            $this->data['display_price'] = TRUE;
+        } else {
+            $this->data['display_price'] = FALSE;
+        }
 
-		
-		$this->load->model('catalog/category');
-		$this->load->model('catalog/product');
-		
-		$this->data['categories'] = array();
-					
-		$categories = $this->model_catalog_category->getCategories(0);
-		
-		foreach ($categories as $category) {
-			$desc = strlen($category['description']) > 70 ? substr($category['description'],0,70).'...' : $category['description'];
-			$this->data['categories'][] = array(
-					'name'     => $category['name'],
-					'desc' 	   => html_entity_decode($desc),
-					'image'   => $this->model_tool_image->resize($category['image'], $setting['image_width'], $setting['image_height']),
-					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
-				);
-		}
-		
-		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/featured.tpl')) {
-			$this->template = $this->config->get('config_template') . '/template/module/featured.tpl';
-		} else {
-			$this->template = 'default/template/module/featured.tpl';
-		}
-
-		$this->render();
-	}
+        $this->id = 'featured';
+        $this->data['id'] = $this->id;
+        $this->template = 'fb/template/product/carousel.tpl';
+        $this->render();
+    }
 }
-?>

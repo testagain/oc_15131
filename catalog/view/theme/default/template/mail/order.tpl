@@ -171,7 +171,7 @@ table.list .center {
     </tfoot>
   </table>
   <p><?php echo $text_footer; ?></p>
-  <p><?php echo //$text_powered; ?></p>
+  <p><?php //echo //$text_powered; ?></p>
 </div>
 </body>
 </html>

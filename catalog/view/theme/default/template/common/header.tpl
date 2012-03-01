@@ -51,15 +51,7 @@ DD_belatedPNG.fix('#logo img');
 <div id="container">
 
 <div id="header">
-	<div id="top_slice"> 
-	<span class="signin"> 
-	<?php if (!$logged) { ?>
-	<a href="<?php echo $sign_in ?>"><?php echo $text_signin ?></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo $register ?>"><?php echo $text_register ?></a>
-	<?php } else {?>
-	<?php echo $text_logged; ?>
-	<?php }?>
-	</span>
-	</div>
+	
   <?php if ($logo) { ?>
   <div id="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
   <?php } ?><!--
@@ -112,7 +104,13 @@ DD_belatedPNG.fix('#logo img');
     <input type="text" name="filter_name" value="<?php echo $text_search; ?>" onclick="this.value = '';" onkeydown="this.style.color = '#000000';" />
     <?php } ?>
   </div>
-  
+  <div id="welcome">
+    <?php if (!$logged) { ?>
+    <?php echo $text_welcome; ?>
+    <?php } else { ?>
+    <?php echo $text_logged; ?>
+    <?php } ?>
+  </div>
   <div class="links"><a href="<?php echo $home; ?>"><?php echo $text_home; ?></a>
   <a class="hidden" href="<?php //echo $wishlist; ?>" id="wishlist_total"><?php //echo $text_wishlist; ?></a>
   <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>

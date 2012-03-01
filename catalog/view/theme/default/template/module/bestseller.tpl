@@ -1,5 +1,8 @@
 <div class="box">
   <div class="box-heading"><?php echo $heading_title; ?></div>
+  <?php 
+  //style="border-top:1px solid #DBDEE1;padding-top:0px;background:#fff;"
+  ?>
   <div class="box-content">
     <div class="box-product">
       <?php foreach ($products as $product) { ?>

@@ -1,11 +1,11 @@
 <?php
 final class Document {
-	private $title;
-	private $description;
-	private $keywords;	
-	private $links = array();		
-	private $styles = array();
-	private $scripts = array();
+	public $title;
+	public $description;
+	public $keywords;	
+	public $links = array();		
+	public $styles = array();
+	public $scripts = array();
 	
 	public function setTitle($title) {
 		$this->title = $title;
