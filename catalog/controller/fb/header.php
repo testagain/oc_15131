@@ -79,9 +79,7 @@ class ControllerFbHeader extends Controller {
         $this->load->model('tool/seo_url');
         $categories = $this->model_catalog_category->getCategories(0);
        	$this->data['categories'] = array();
-
-        $this->id = 'fb_header';
-        
+ 
         foreach($categories as $category){
             $this->data['categories'][] = array(
                 'name'		=>	$category['name'],

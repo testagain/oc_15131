@@ -51,6 +51,7 @@ abstract class Controller {
 	}
 	
 	protected function render() {
+		//echo "<pre>";print_r($this->children);exit;
 		foreach ($this->children as $child) {
 			$this->data[basename($child)] = $this->getChild($child);
 		}
