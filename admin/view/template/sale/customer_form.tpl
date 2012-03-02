@@ -208,6 +208,8 @@
           <?php $address_row++; ?>
           <?php } ?>
         </div>
+        
+        <!--
         <?php if ($customer_id) { ?>
         <div id="tab-transaction">
           <table class="form">
@@ -225,7 +227,7 @@
           </table>
           <div id="transaction"></div>
         </div>
-        <div id="tab-reward">
+        <div id="tab-reward" class="hidden">
           <table class="form">
             <tr>
               <td><?php echo $entry_description; ?></td>
@@ -242,6 +244,8 @@
           <div id="reward"></div>
         </div>
         <?php } ?>
+        
+        -->
         <div id="tab-ip">
           <table class="list">
             <thead>

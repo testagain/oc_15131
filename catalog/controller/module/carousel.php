@@ -20,11 +20,13 @@ class ControllerModuleCarousel extends Controller {
 			if (file_exists(DIR_IMAGE . $result['image'])) {
 				$this->data['banners'][] = array(
 					'title' => $result['title'],
-					'link'  => $result['link'],
+					'link'  => HTTP_SERVER.$result['link'],
 					'image' => $this->model_tool_image->resize($result['image'], $setting['width'], $setting['height'])
 				);
 			}
 		}
+		
+		//print_r($this->data['banners']);exit;
 		
 		$this->data['module'] = $module++; 
 		
