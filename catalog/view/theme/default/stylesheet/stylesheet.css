@@ -78,14 +78,17 @@ label {
 #column-left {
 	float: left;
 	width: 180px;
+	padding:0px 10px;
 }
 #column-right {
 	float: right;
 	width: 180px;
+	padding:0px 10px;
 }
 #content {
 	min-height: 400px;
 	margin-bottom: 25px;
+	padding:0px 10px;
 }
 #column-left + #column-right + #content, #column-left + #content {
 	margin-left: 195px;
@@ -373,7 +376,6 @@ label {
 	border-radius: 0px 0px 5px 5px;
 	opacity:0.95;
 	/*background:#0A78D9;*/
-	background:#018EEA;
 	background:#39A7EE;
 }
 #menu > ul > li:hover > div {
@@ -394,11 +396,10 @@ label {
 	min-width: 120px;
 }
 #menu > ul > li ul > li > a:hover {
-	background: #0253A5;
 	background:#0181D5;
 }
 
-#menu > ul > li ul > li > a:hover #menu > ul > li > a {background:url("../image/menu_seprator.gif") no-repeat scroll right center transparent;}
+#menu > ul > li ul > li > a:hover #menu > ul > li > a {color:#fff;}
 
 #menu > ul > li > div > ul > li > a {
 	color: #FFFFFF;

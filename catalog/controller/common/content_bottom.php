@@ -31,6 +31,10 @@ class ControllerCommonContentBottom extends Controller {
 		if (!$layout_id) {
 			$layout_id = $this->model_design_layout->getLayout($route);
 		}
+		
+		if($route == 'fb/home'){
+			$layout_id = 1;
+		}
 						
 		if (!$layout_id) {
 			$layout_id = $this->config->get('config_layout_id');

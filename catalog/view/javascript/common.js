@@ -45,6 +45,12 @@ $(document).ready(function() {
 		});
 	});
 	
+	$('#menu > ul > li > div, #menu > ul > li > a').hover(function(){
+		$(this).parents('#menu > ul > li').children('a').css({'color' : '#fff'});
+	},function(){
+		$(this).parents('#menu > ul > li').children('a').css({'color' : '#555'});
+	})
+	
 	/* Mega Menu */
 	$('#menu ul > li > a + div').each(function(index, element) {
 		// IE6 & IE7 Fixes
@@ -79,6 +85,7 @@ $(document).ready(function() {
 		if ($.browser.version <= 7) {
 			$('#menu > ul > li').bind('mouseover', function() {
 				$(this).addClass('active');
+				
 			});
 				
 			$('#menu > ul > li').bind('mouseout', function() {

@@ -57,23 +57,6 @@ class ControllerModuleFeatured extends Controller {
 		}
 
 		
-		$this->load->model('catalog/category');
-		$this->load->model('catalog/product');
-		
-		$this->data['categories'] = array();
-					
-		$categories = $this->model_catalog_category->getCategories(0);
-		
-		foreach ($categories as $category) {
-			$desc = strlen($category['description']) > 70 ? substr($category['description'],0,70).'...' : $category['description'];
-			$this->data['categories'][] = array(
-					'name'     => $category['name'],
-					'desc' 	   => html_entity_decode($desc),
-					'image'   => $this->model_tool_image->resize($category['image'], $setting['image_width'], $setting['image_height']),
-					'href'     => $this->url->link('product/category', 'path=' . $category['category_id'])
-				);
-		}
-		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/featured.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/module/featured.tpl';
 		} else {
