@@ -8,7 +8,7 @@ class ControllerCommonHeader extends Controller {
 		} else {
 			$this->data['base'] = $this->config->get('config_url');
 		}
-		
+				
 		$this->data['description'] = $this->document->getDescription();
 		$this->data['keywords'] = $this->document->getKeywords();
 		$this->data['links'] = $this->document->getLinks();	 
