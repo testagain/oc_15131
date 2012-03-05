@@ -346,9 +346,9 @@
                   <?php } ?>
                 </select></td>
             </tr>
-            <tr>
-              <td><?php echo $entry_affiliate; ?></td>
-              <td><select name="config_affiliate_id">
+            <tr class="hidden">
+              <td class="hidden"><?php echo $entry_affiliate; ?></td>
+              <td class="hidden"><select name="config_affiliate_id">
                   <option value="0"><?php echo $text_none; ?></option>
                   <?php foreach ($informations as $information) { ?>
                   <?php if ($information['information_id'] == $config_affiliate_id) { ?>
@@ -359,9 +359,9 @@
                   <?php } ?>
                 </select></td>
             </tr>
-            <tr>
-              <td><?php echo $entry_commission; ?></td>
-              <td><input type="text" name="config_commission" value="<?php echo $config_commission; ?>" size="3" /></td>
+            <tr class="hidden">
+              <td class="hidden"><?php echo $entry_commission; ?></td>
+              <td class="hidden"><input type="text" name="config_commission" value="<?php echo $config_commission; ?>" size="3" /></td>
             </tr>
             <tr>
               <td><?php echo $entry_stock_display; ?></td>

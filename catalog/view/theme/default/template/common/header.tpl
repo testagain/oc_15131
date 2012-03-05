@@ -69,7 +69,7 @@ DD_belatedPNG.fix('#logo img');
   -->
   <?php if (count($currencies) > 1) { ?>
   <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
-    <div id="currency"><?php echo $text_currency; ?><br />
+    <div id="currency"><b style="color:black;"><?php echo $text_currency; ?></b><br />
       <?php foreach ($currencies as $currency) { ?>
       <?php if ($currency['code'] == $currency_code) { ?>
       <?php if ($currency['symbol_left']) { ?>
