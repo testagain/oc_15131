@@ -20,6 +20,8 @@ class ControllerModuleLatest extends Controller {
 			'limit' => $setting['limit']
 		);
 
+		$this->data['view_all'] = $this->url->link('product/latest');
+		
 		$results = $this->model_catalog_product->getProducts($data);
 
 		foreach ($results as $result) {

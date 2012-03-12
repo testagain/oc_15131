@@ -666,7 +666,7 @@ a.button:hover span {
 	display: block;
 	margin-bottom: 0px;
 }
-.box-product .image img {
+.box-product .image img,.xbox-product .image img{
 	padding: 3px;
 	border: 1px solid #E7E7E7;
 }
@@ -1600,11 +1600,13 @@ a.button:hover span {
 #footer .column a:hover {
 	text-decoration: underline;
 }
-#powered {
+#powered,#message_footer {
 	margin-top: 5px;
-	text-align: right;
-	clear: both;
+	text-align: left;
+	padding-right:3px;
 }
+
+#message_footer {text-align:right;}
 /* banner */
 .banner div {
 	text-align: center;
@@ -1718,3 +1720,6 @@ a.button:hover span {
     width: 270px;}
 .home_cat li p {margin-bottom:2px;}
 #welcome a {color:#FF0000;}
+.tar {text-align:right;}
+.box .right {float:right;}
+.box .left {float:left;}

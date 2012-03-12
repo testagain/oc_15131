@@ -1,8 +1,12 @@
 <div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
-  <div class="box-content">
-    <div class="box-product">
+  <div class="box-heading"><?php echo $heading_title; ?>
+  <span class="right"><a href="<?php echo $view_all ?>">View all</a></span>
+  </div>
+  <div class="box-content" id="latest_carousel">
+    <div class="xbox-product">
+    <ul class="jcarousel-skin-opencart" id="latest">
       <?php foreach ($products as $product) { ?>
+      <li>
       <div>
         <?php if ($product['thumb']) { ?>
         <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
@@ -22,7 +26,16 @@
         <?php } ?>
         <div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><span><?php echo $button_cart; ?></span></a></div>
       </div>
+      </li>
       <?php } ?>
+      </ul>
     </div>
   </div>
 </div>
+<script type="text/javascript"><!--
+$('#latest').jcarousel({
+	vertical: false,
+	visible: 5,
+	scroll: 3
+});
+//--></script>

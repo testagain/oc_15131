@@ -41,6 +41,9 @@
 	cursor: pointer;
 	background: url('../image/button-next.png') center no-repeat;
 }
+
+
+
 .jcarousel-skin-opencart .jcarousel-direction-rtl .jcarousel-next-horizontal {
 	left: 5px;
 	right: auto;
@@ -63,6 +66,9 @@
 	cursor: pointer;
 	background: url('../image/button-previous.png') center no-repeat;
 }
+
+#featured_carousel .jcarousel-skin-opencart .jcarousel-next-horizontal,#featured_carousel .jcarousel-skin-opencart .jcarousel-prev-horizontal {top:85px;}
+
 .jcarousel-skin-opencart .jcarousel-direction-rtl .jcarousel-prev-horizontal {
 	left: auto;
 	right: 0px;

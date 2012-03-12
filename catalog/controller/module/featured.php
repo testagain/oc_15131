@@ -56,6 +56,7 @@ class ControllerModuleFeatured extends Controller {
 			}
 		}
 
+		$this->data['view_all'] = $this->url->link('product/featured');
 		
 		if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/module/featured.tpl')) {
 			$this->template = $this->config->get('config_template') . '/template/module/featured.tpl';

@@ -26,6 +26,13 @@ class ModelSettingSetting extends Model {
 				$this->db->query("INSERT INTO " . DB_PREFIX . "setting SET store_id = '" . (int)$store_id . "', `group` = '" . $this->db->escape($group) . "', `key` = '" . $this->db->escape($key) . "', `value` = '" . $this->db->escape(serialize($value)) . "', serialized = '1'");
 			}
 		}
+		
+		if(isset($data['featured_product'])){
+			$products = explode(',',$data['featured_product']);
+			foreach($products as $product_id){
+				$this->db->query("UPDATE ".DB_PREFIX."product SET is_featured = 1 WHERE product_id = '".$product_id."' ");
+			}
+		}
 	}
 	
 	public function deleteSetting($group, $store_id = 0) {
