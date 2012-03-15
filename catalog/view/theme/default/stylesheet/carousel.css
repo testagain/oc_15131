@@ -67,7 +67,7 @@
 	background: url('../image/button-previous.png') center no-repeat;
 }
 
-#featured_carousel .jcarousel-skin-opencart .jcarousel-next-horizontal,#featured_carousel .jcarousel-skin-opencart .jcarousel-prev-horizontal {top:85px;}
+#featured_carousel .jcarousel-skin-opencart .jcarousel-next-horizontal,#bestseller_carousel .jcarousel-skin-opencart .jcarousel-prev-horizontal, #latest_carousel .jcarousel-skin-opencart .jcarousel-prev-horizontal {top:85px;}
 
 .jcarousel-skin-opencart .jcarousel-direction-rtl .jcarousel-prev-horizontal {
 	left: auto;

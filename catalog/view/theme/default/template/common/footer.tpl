@@ -46,7 +46,7 @@ OpenCart is open source software and you are free to remove the powered by OpenC
 Please donate via PayPal to donate@opencart.com
 //-->
 <div id="powered" style="float:left"><?php echo $powered; ?></div>
-<div id="message_footer" style="float:right">123Quickdeals.co.uk is part of <a href="http://www.touchtec.co.uk/" target="_blank">Touchtec Ltd</a></div>
+<div id="message_footer" style="float:right">123Quickdeals.co.uk is part of Touchtec Ltd</div>
 <div style="clear:both;"></div>
 <!-- 
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.

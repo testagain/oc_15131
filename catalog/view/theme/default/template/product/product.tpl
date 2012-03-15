@@ -238,8 +238,8 @@
     <?php } ?>
     <?php if ($products) { ?>
     <a href="#tab-related"><?php echo $tab_related; ?> (<?php echo count($products); ?>)</a>
-    <a href="#tab-question">Questions &amp; Answers</a>
     <?php } ?>
+    <a href="#tab-question">Questions &amp; Answers</a>
   </div>
   <div id="tab-description" class="tab-content"><?php echo $description; ?></div>
   
